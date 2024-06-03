@@ -33,6 +33,25 @@ while true
 do
         echo "Loop running"
 done
+Assi4-(private bucket)
+after upload action->presigned url
+
+
+Assi5:-(public bucket)
+ACL enable
+public bucket
+permissinon->acl edit
+permission dropdown->Everyone
+copy url
+
+
+Assi6:-(static web on s3)
+ACL enable
+public bucket
+upload->permmission->grant public read access
+propaties->static web hosting->enable
+copy bucket website endpoint
+
 Assi7:(hosting website on ec2)-
 no need sec gr
 sudo apt-get update
@@ -103,3 +122,17 @@ location / {
 new terminal---
 cd repo1
 sudo systemctl restart nginx
+
+Assi 13: workmail
+free test domain
+add user
+amazon workmail web application
+
+Assi14:-
+
+Assi-15:-serverless Lambda
+function name->create function
+modify code and deploy
+create event from test section 
+configure section choose None
+functional url
