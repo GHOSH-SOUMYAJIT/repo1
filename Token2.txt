@@ -33,7 +33,32 @@ while true
 do
         echo "Loop running"
 done
+Assi7:(hosting website on ec2)-
+no need sec gr
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get install nginx
+cd /var/www
+sudo chmod 777 html
+open SFTP window
+        copy on / var/www/html
 
+
+Assi9:(deploy from git hub to ec2)
+Edit and add custom tcp
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get install nginx
+curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash -
+sudo apt install nodejs
+git clone LINK
+cd repo1
+npm install
+node index.js
+
+
+Assi :--10(new SEc group)
+new sec grp.
 #!/bin/bash
 apt-get update
 apt-get install -y nginx
@@ -48,6 +73,25 @@ npm install
 node index.js
 
 
+
+
+assi:-12(without PORT)
+
+new security grp.
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get install nginx
+curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash -
+sudo apt install nodejs
+git clone LINK
+cd repo1
+npm install
+node index.js
+
+cd /
+pwd 
+cd etc/nginx/sites-available/
+sudo nano default
 location / {
                 proxy_pass http://localhost:4000;
                 proxy_http_version 1.1;
@@ -56,3 +100,6 @@ location / {
                 proxy_set_header Host $host;
                 proxy_cache_bypass $http_upgrade;
         }
+new terminal---
+cd repo1
+sudo systemctl restart nginx
